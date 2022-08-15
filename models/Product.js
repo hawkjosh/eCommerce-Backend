@@ -25,6 +25,7 @@ Product.init(
     price: {
       type: DataTypes.DECIMAL,
       allowNull: false,
+      // Set validation to ensure decimal type
       validate: {
         isDecimal: true
       }
@@ -34,6 +35,7 @@ Product.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 10,
+      // Set validation to ensure numeric type
       validate: {
         isNumeric: true
       }
@@ -41,6 +43,7 @@ Product.init(
     // Defined a 'category_id' column
     category_id: {
       type: DataTypes.INTEGER,
+      // Reference foreign key to primary key in category model at id column
       references: {
         model: 'category',
         key: 'id'
