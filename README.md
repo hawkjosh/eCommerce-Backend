@@ -1,4 +1,4 @@
-# module13-ecommerce-backend-challenge
+# eCommerce-Backend
 
 ## Description
 
